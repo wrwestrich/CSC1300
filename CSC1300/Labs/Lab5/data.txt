@@ -1,0 +1,30 @@
+T00010000
+Adam Black
+3.23
+T00010001
+Bethany Blue
+3.9
+T00010002
+Carl Cordoroy
+2.6
+T00010003
+Destiny Demps
+3.12
+T00010004
+Edgar Ellensworth
+1.86
+T00010005
+Felicia Farmhouse
+3.43
+T00010006
+Gary Gallent
+2.89
+T00010007
+Henrietta Hooper
+3.10
+T00010008
+Isaac Irritable
+3.73
+T00010009
+Jessica Jumpinghorn
+2.91
