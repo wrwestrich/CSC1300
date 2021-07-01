@@ -11,17 +11,17 @@ using namespace std;
 
 struct Jellybean
 {
-	float poundPrice, quantity, rating;
-    string flavor, color;
+  float poundPrice, quantity, rating;
+  string flavor, color;
 };
 
 const int NUM_FLAVORS = 50;
 
 float stringToFloat(string);
 int deleteBeans(Jellybean[], int);
-void PrintInventory(int, Jellybean []);
-void PrintColor(int, Jellybean []);
+void PrintInventory(int, Jellybean[]);
+void PrintColor(int, Jellybean[]);
 int DisplayMenuGetChoice();
-int AddBeans(int, Jellybean []);
+int AddBeans(int, Jellybean[]);
 
 #endif
