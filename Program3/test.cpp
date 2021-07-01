@@ -4,14 +4,18 @@
 #include <unistd.h>
 using namespace std;
 
-int main(){
-    int consoleSize;
-    struct winsize w;
+int main()
+{
+  int consoleSize;
+  struct winsize w;
 
-    ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
-    consoleSize = w.ws_col;
+  ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
+  consoleSize = w.ws_col;
 
-    cout << endl << endl << consoleSize << endl << endl;
+  cout << endl
+       << endl
+       << consoleSize << endl
+       << endl;
 
-    return 0;
+  return 0;
 }

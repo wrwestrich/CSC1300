@@ -24,24 +24,25 @@ int ConsoleSizeUnix();
 #endif
 using namespace std;
 
-
 static const short MAX_CREATURES = 100;
 
-struct Cost {
-    float hours, costPerHour, costFood, costMat;
+struct Cost
+{
+  float hours, costPerHour, costFood, costMat;
 };
 
-struct Creatures {
-    string name, description, location;
-    float avgLength, avgHeight;
-    bool dangerous;
-    Cost costData;
+struct Creatures
+{
+  string name, description, location;
+  float avgLength, avgHeight;
+  bool dangerous;
+  Cost costData;
 };
 
-string WordWrap(const char*, int);
-int EnterCreatures(int, Creatures []);
-int DeleteCreature(int, Creatures []);
-void PrintCreatures(int, Creatures []);
-void PrintStatistics(int, Creatures []);
-void SaveCreatures(int, Creatures []);
+string WordWrap(const char *, int);
+int EnterCreatures(int, Creatures[]);
+int DeleteCreature(int, Creatures[]);
+void PrintCreatures(int, Creatures[]);
+void PrintStatistics(int, Creatures[]);
+void SaveCreatures(int, Creatures[]);
 #endif
