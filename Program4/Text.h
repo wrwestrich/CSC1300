@@ -15,7 +15,7 @@ using namespace std;
 
 struct Text
 {
-	const char* textArray;
+	const char *textArray;
 	int textLength;
 };
 
@@ -25,7 +25,7 @@ struct Text
 	Returns:  A pointer to a new Text variable, which contains the c-string & the length of the string
 	Purpose:  To create a new Text variable
 */
-Text* createText(const char*);
+Text *createText(const char *);
 
 /*
 	Function Name:  destroyText()
@@ -33,7 +33,7 @@ Text* createText(const char*);
 	Returns:  nothing (void)
 	Purpose:  release dynamically allocated memory that the pointer is pointing to.
 */
-void destroyText(Text*);
+void destroyText(Text *);
 
 /*
 	Function Name:  displayText()
@@ -41,20 +41,20 @@ void destroyText(Text*);
 	Returns:  nothing (void)
 	Purpose:  prints out the string (character array)
 */
-void displayText(Text*);
+void displayText(Text *);
 
 /*
 	Function Name:  getText()
 	Parameters:  Send a pointer to a Text variable, which contains a c-string & length of the string
 	Returns:  pointer to a constant character array
 */
-const char* getText(Text*);
+const char *getText(Text *);
 
 /*
 	Function Name:  getLength()
 	Parameters:  Send a pointer to a Text variable, which contains a c-string & length of the string
 	Returns:  the length of the string 
 */
-int getLength(Text*);
+int getLength(Text *);
 
 #endif

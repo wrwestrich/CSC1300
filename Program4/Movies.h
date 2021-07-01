@@ -16,9 +16,9 @@ using namespace std;
 
 struct Movies
 {
-	Movie** moviesArray; //an array of pointers - each pointer points to a single Movie
-	int maxMovies; //maximum number of elements in the array
-	int numMovies; //current number of movies in the array
+	Movie **moviesArray; //an array of pointers - each pointer points to a single Movie
+	int maxMovies;			 //maximum number of elements in the array
+	int numMovies;			 //current number of movies in the array
 };
 
 /*
@@ -29,7 +29,7 @@ struct Movies
 					of movies.  The function will dynamically allocate a movies array based
 					on the maximum size and will also set the current number of movies to zero.
 */
-Movies* createMovies(int);
+Movies *createMovies(int);
 
 /*
 	Function name:  addMovieToArray 
@@ -40,7 +40,7 @@ Movies* createMovies(int);
 					movie library.
 */
 //FIXME:  put the function prototype for addMovieToArray here!!***************************************************
-bool addMovieToArray(Movies*, Movie*);
+bool addMovieToArray(Movies *, Movie *);
 
 /*
 	Function name:  destroyMovies 
@@ -50,7 +50,7 @@ bool addMovieToArray(Movies*, Movie*);
 					movies in the movie library as well as the movie library.  This releases
 					all the dynamically allocated space in memory.
 */
-void destroyMovies(Movies*);
+void destroyMovies(Movies *);
 
 /*
 	Function name:  displayMovies 
@@ -59,7 +59,7 @@ void destroyMovies(Movies*);
 	Purpose:  		This function should be called when the user wants to have all the movies
 					in the library printed to the screen.
 */
-void displayMovies(Movies*);
+void displayMovies(Movies *);
 
 /*
 	Function name:  displayMovieTitles 
@@ -68,7 +68,7 @@ void displayMovies(Movies*);
 	Purpose:  		This function should be called when you want to print only the movie titles
 					out of the movie library
 */
-void displayMovieTitles(Movies*);
+void displayMovieTitles(Movies *);
 
 /*
 	Function name:  readMoviesFromFile 
@@ -80,7 +80,7 @@ void displayMovieTitles(Movies*);
 					title, length, year, genre, rating, num oscars won, star rating
 */
 //FIXME:  Put the function prototype of readMoviesFromFile here!**************************************************
-void readMoviesFromFile(char*, Movies*);
+void readMoviesFromFile(char *, Movies *);
 
 /*
 	Function name:  removeMovieFromArray 
@@ -92,7 +92,7 @@ void readMoviesFromFile(char*, Movies*);
 					calling this function because this function eeds the element number (not
 					the subscript/index number) of the movie to be removed.
 */
-void removeMovieFromArray(Movies* movies, int movieElement);
+void removeMovieFromArray(Movies *movies, int movieElement);
 
 /*
 	Function name:  saveToFile 
@@ -104,6 +104,6 @@ void removeMovieFromArray(Movies* movies, int movieElement);
 					of data per line):
 					title, length, year, genre, rating, num oscars won, star rating
 */
-void saveToFile(char *filename, Movies* myMovies);
+void saveToFile(char *filename, Movies *myMovies);
 
 #endif

@@ -19,12 +19,12 @@ using namespace std;
 
 struct Movie
 {
-	Text* movieTitle;  //title of movie
-	int movieLength; //length of movie in minutes
-	int movieYear; //year released
-	Text* movieGenre; //comedy, horror, sci-fi, fantasy, romance, thriller, drama, action, biography
-	Text* movieRating; //G, PG, PG-13, R, MA
-	int movieOscars; //number of oscars won (not nominations)
+	Text *movieTitle;		 //title of movie
+	int movieLength;		 //length of movie in minutes
+	int movieYear;			 //year released
+	Text *movieGenre;		 //comedy, horror, sci-fi, fantasy, romance, thriller, drama, action, biography
+	Text *movieRating;	 //G, PG, PG-13, R, MA
+	int movieOscars;		 //number of oscars won (not nominations)
 	float movieNumStars; //taken from IMDB on 10 star scale
 };
 
@@ -36,7 +36,7 @@ struct Movie
 	Purpose:  		This function should be called when only the title of the movie and the length of
 					the movie is known and it will create a new movie with this information.
 */
-Movie* createMovie(Text*, int); 
+Movie *createMovie(Text *, int);
 
 /*
 	Function name:  createMovie (overloaded function)
@@ -52,7 +52,7 @@ Movie* createMovie(Text*, int);
 					it will dynamically create a new movie, assign parameter data to the structure,
 					and then return the pointer to the newly created Movie
 */
-Movie* createMovie(Text*, int, int, Text*, Text*, int, float); 
+Movie *createMovie(Text *, int, int, Text *, Text *, int, float);
 
 /*
 	Function name:  editMovie 
@@ -64,7 +64,7 @@ Movie* createMovie(Text*, int, int, Text*, Text*, int, float);
 					in a new value to overwrite the old value.  Then it will show the menu again
 					until the user choose #8, which means they are done editing.
 */
-void editMovie(Movie* myMovie);
+void editMovie(Movie *myMovie);
 
 /*
 	Function name:  destroyMovie 
@@ -73,7 +73,7 @@ void editMovie(Movie* myMovie);
 	Purpose:  		This function should be called when there is no longer need for the
 					movie in the database (like when removing or deleting a movie).
 */
-void destroyMovie(Movie*);
+void destroyMovie(Movie *);
 
 /*
 	Function name:  printMovieDetails 
@@ -82,7 +82,7 @@ void destroyMovie(Movie*);
 	Purpose:  		This function should be called when the user wants to print ALL
 					the movie information to the screen.
 */
-void printMovieDetails(Movie*);
+void printMovieDetails(Movie *);
 
 /*
 	Function name:  printMovieDetailsToFile 
@@ -92,32 +92,24 @@ void printMovieDetails(Movie*);
 					the movie information to the file.
 */
 //FIXME:  add function prototype of printMovieDetailsToFile here!!***********************************************
-void printMovieDetailsToFile(Movie*, ofstream&);
-
-
-
-
+void printMovieDetailsToFile(Movie *, ofstream &);
 
 //function prototypes to get the information out of the structure variable
-Text* getMovieTitle(Movie*);
-int getMovieLength(Movie*);
-int getMovieYear(Movie*);
-Text* getMovieGenre(Movie*);
-Text* getMovieRating(Movie*);
-int getMovieOscars(Movie*);
-float getMovieNumStars(Movie*);
+Text *getMovieTitle(Movie *);
+int getMovieLength(Movie *);
+int getMovieYear(Movie *);
+Text *getMovieGenre(Movie *);
+Text *getMovieRating(Movie *);
+int getMovieOscars(Movie *);
+float getMovieNumStars(Movie *);
 
 //function prototypes to set or change the information in the structure variable
-void setMovieTitle(Movie*, Text*);
-void setMovieLength(Movie*, int);
-void setMovieYear(Movie*, int);
-void setMovieGenre(Movie*, Text*);
-void setMovieRating(Movie*, Text*);
-void setMovieOscars(Movie*, int);
-void setMovieNumStars(Movie*, int);
-
-
-
-
+void setMovieTitle(Movie *, Text *);
+void setMovieLength(Movie *, int);
+void setMovieYear(Movie *, int);
+void setMovieGenre(Movie *, Text *);
+void setMovieRating(Movie *, Text *);
+void setMovieOscars(Movie *, int);
+void setMovieNumStars(Movie *, int);
 
 #endif
